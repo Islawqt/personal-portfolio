@@ -53,6 +53,6 @@
     nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setOpen(false)));
     document.addEventListener('click',e=>{if(nav.classList.contains('open')&&!nav.contains(e.target)&&!menu.contains(e.target))setOpen(false);});
     document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){setOpen(false);menu.focus();}});
-    window.addEventListener('resize',()=>{if(innerWidth>700)setOpen(false);},{passive:true});
+    window.addEventListener('resize',()=>{if(innerWidth>980)setOpen(false);},{passive:true});
   }
 })();
