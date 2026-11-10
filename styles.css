@@ -317,3 +317,126 @@ h3{font-size:clamp(1.3rem,6vw,2.3rem)}
 @media (min-width:701px) {
   .impact .chart-phone { display:none; }
 }
+
+
+/* Mobile editorial pages: compact illustrations and swipeable media galleries. */
+@media (max-width:700px) {
+  .panel:not(.hero) {
+    padding-top:72px;
+    padding-bottom:max(24px,env(safe-area-inset-bottom,0px));
+  }
+  .panel:not(.hero) .container { width:100%; }
+  .panel:not(.hero) .two-col { gap:clamp(12px,2svh,20px); }
+  .panel:not(.hero) .eyebrow { margin-bottom:9px; }
+  .panel:not(.hero) h2 { font-size:clamp(31px,9vw,49px); }
+  .panel:not(.hero) .project-title { font-size:clamp(32px,9.2vw,50px); }
+  .panel:not(.hero) .body-copy { font-size:clamp(14px,3.8vw,17px); line-height:1.4; margin-top:12px; }
+
+  /* About: keep real portrait, but don't let it push the bio off screen. */
+  .about .photo-panel { width:min(52vw,23svh,210px); padding:5%; margin-inline:auto; }
+  .about .intro-line { margin:14px 0; font-size:clamp(22px,5.5vw,31px); }
+  .about .about-points { gap:10px; font-size:clamp(14px,3.8vw,17px); line-height:1.38; }
+
+  /* Skills: concise stacked cards on narrow screens. */
+  .skills .skills-grid { margin-top:16px; gap:11px; }
+  .skills .skills-intro { font-size:15px; line-height:1.35; }
+  .skills .skill-card { padding:15px 18px; border-radius:16px; }
+  .skills .skill-card h3 { font-size:clamp(20px,5vw,26px); }
+  .skills .skill-card .small-heading { font-size:10px; margin-bottom:7px; }
+  .skills .skill-card ul { margin:9px 0 0; font-size:14px; }
+  .skills .skill-card li { padding:3px 0; }
+
+  /* Panaghimamat: shorter two-phone presentation, same real screenshots. */
+  .project-panel .phones { gap:11px; padding:3px 0; }
+  .project-panel .phone {
+    width:min(38vw,18svh,137px); max-width:137px;
+    flex:0 0 auto; border-width:4px;
+  }
+  .project-panel .bullet-lines { font-size:15px; margin-top:12px; }
+  .project-panel .bullet-lines p { margin:6px 0; line-height:1.35; }
+  .project-panel .tags { margin-top:11px; }
+
+  /* Sportfest: preview both banners with one sideways swipe. */
+  .sportfest .banners {
+    display:flex; flex-direction:row; gap:12px;
+    overflow-x:auto; overflow-y:hidden;
+    scrollbar-width:thin; scroll-snap-type:x mandatory;
+    padding:4px 2px 12px; width:100%;
+  }
+  .sportfest .banners img {
+    flex:0 0 82%; width:82%; max-width:310px;
+    height:auto; max-height:170px; object-fit:contain;
+    scroll-snap-align:start; box-shadow:0 7px 18px #0002;
+  }
+  .sportfest .tags { margin-top:11px; }
+  .sportfest .bullet-lines { margin-top:14px; font-size:14px; }
+  .sportfest .bullet-lines p { margin:6px 0; line-height:1.35; }
+
+  /* Workflow: four readable step screenshots swipe instead of stacking. */
+  .sportflow .flow-grid {
+    display:flex; flex-direction:row; gap:13px;
+    overflow-x:auto; overflow-y:hidden;
+    scroll-snap-type:x mandatory; scrollbar-width:thin;
+    padding:8px 2px 12px; margin-top:16px;
+    align-items:flex-start;
+  }
+  .sportflow .flow-card {
+    flex:0 0 min(56vw,180px); width:min(56vw,180px);
+    max-width:none; min-width:0; margin:0; scroll-snap-align:start;
+  }
+  .sportflow .flow-card img { width:100%; height:auto; display:block; }
+  .sportflow .flow-card figcaption { font-size:13px; min-height:34px; }
+
+  /* Capstone: logo is supporting artwork, not a second screen. */
+  .capstone h3 { margin-top:11px; font-size:clamp(18px,4.6vw,23px); line-height:1.13; }
+  .capstone p:not(.eyebrow) {
+    font-size:clamp(14px,3.65vw,16px); line-height:1.35;
+    margin-top:10px;
+  }
+  .capstone .bullet-lines { margin-top:9px; }
+  .capstone .bullet-lines p { margin:5px 0; }
+  .capstone .logo-panel {
+    width:min(54vw,20svh,210px); max-width:210px;
+    padding:3%; margin-inline:auto;
+  }
+
+  /* Privacy: two big swipeable cards instead of one long vertical stack. */
+  .privacy .privacy-grid {
+    display:flex; flex-direction:row; gap:12px;
+    overflow-x:auto; overflow-y:hidden;
+    scroll-snap-type:x mandatory; scrollbar-width:thin;
+    margin-top:14px; padding:2px 1px 12px;
+  }
+  .privacy .privacy-card {
+    flex:0 0 83%; width:83%; min-width:0;
+    padding:17px 19px; scroll-snap-align:start;
+  }
+  .privacy .privacy-card h3 { font-size:clamp(20px,5vw,26px); margin-bottom:6px; }
+  .privacy .privacy-card p { font-size:15px; line-height:1.35; padding:5px 0; }
+  .privacy .privacy-line { margin-top:14px; font-size:clamp(19px,5.3vw,26px); }
+
+  /* Education/contact artwork should not compete with the copy. */
+  .education .side-art, .contact .side-art {
+    width:min(54vw,20svh,210px); max-width:210px;
+    height:auto; margin:0 auto;
+  }
+  .education .edu-list { margin-top:12px; }
+  .education .edu-row { padding:9px 0; }
+  .education .edu-row h3 { font-size:clamp(19px,5vw,24px); margin-bottom:4px; }
+  .education .edu-row p { font-size:15px; }
+  .education .edu-row span { font-size:13px; margin-top:4px; }
+  .contact .contact-links { margin-top:15px; gap:2px; }
+  .contact .contact-links a { font-size:clamp(14px,3.8vw,18px); min-height:40px; }
+  .contact .copyright { margin-top:15px; }
+}
+@media (max-width:700px) and (max-height:690px) {
+  .panel:not(.hero) { padding-top:67px; padding-bottom:20px; }
+  .panel:not(.hero) .two-col { gap:10px; }
+  .about .photo-panel { width:min(45vw,18svh,155px); }
+  .project-panel .phone { width:min(37vw,17svh,125px); }
+  .sportfest .banners img { max-width:265px; max-height:130px; }
+  .sportflow .flow-card { flex-basis:min(50vw,155px); width:min(50vw,155px); }
+  .capstone .logo-panel, .education .side-art, .contact .side-art {
+    width:min(44vw,17svh,155px);
+  }
+}
