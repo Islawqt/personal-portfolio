@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf6ec">
+  <meta name="description" content="Julius, also known as Islaw — Web & App Developer and BSIS student building practical campus systems.">
+  <title>Julius / Islaw — Personal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#home">Skip to main content</a>
+  <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress"></span></div>
+  <header class="topbar">
+    <a class="logo" href="#home" aria-label="Julius portfolio home">JULIUS<span>.</span> <small>ISLAW</small></a>
+    <button class="menu-button" id="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">Menu <span aria-hidden="true">☰</span></button>
+    <nav id="main-nav" class="main-nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#education">Education</a>
+      <a href="#contact" class="nav-cta">Let's connect ↗</a>
+    </nav>
+  </header>
+  <nav id="section-dots" class="section-dots" aria-label="Page sections"></nav>
+  <main>
+    <!-- 01: Canva cover -->
+    <section id="home" class="panel hero" data-title="Intro">
+      <div class="container two-col">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">Portfolio / 2026</p>
+          <h1 class="reveal delay-1">Hi, I'm<br><em>Julius</em><span class="wave" role="img" aria-label="waving">👋</span></h1>
+          <p class="lead reveal delay-2">Web & App Developer <span class="orange">|</span> BSIS Student</p>
+          <p class="subtitle reveal delay-3">I build web systems and simple apps that solve real problems for our campus events.</p>
+          <div class="tags reveal delay-4">
+            <span>Web Systems</span><span>Apps Script</span><span>GitHub Pages</span><span>Data Privacy</span>
+          </div>
+          <a href="#about" class="scroll-prompt reveal delay-4">Scroll to explore <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-visual reveal delay-2">
+          <div class="photo-panel hero-panel">
+            <img class="photo-oval" src="assets/hero-photo.jpg" alt="Julius smiling outdoors with mountains behind him" width="858" height="891" loading="eager">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 02: About -->
+    <section id="about" class="panel about" data-title="About">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow orange reveal">Get to know me</p>
+          <h2 class="reveal delay-1">About <em>Me</em></h2>
+          <h3 class="intro-line reveal delay-2">Call me <em>Islaw.</em></h3>
+          <div class="about-points reveal delay-3">
+            <p>I'm a <strong>4th-year BSIS student</strong> at STI College Valencia.</p>
+            <p>I build web systems that solve real problems.</p>
+            <p>I've built live event systems for our campus SSC: <strong>295 guests served</strong>, 330+ IDs generated for Sportfest next.</p>
+            <p>I care about keeping users' data safe.</p>
+          </div>
+        </div>
+        <div class="photo-panel about-panel reveal delay-2"><img class="photo-oval" src="assets/about-photo.jpg" alt="Julius looking out over a mountain view" width="856" height="887" loading="lazy"></div>
+      </div>
+    </section>
+    <!-- 03: Skills -->
+    <section id="skills" class="panel skills" data-title="Skills">
+      <div class="container">
+        <p class="eyebrow orange reveal">What I work with</p>
+        <h2 class="reveal delay-1">Skills <em>&amp;</em> Tools</h2>
+        <div class="skills-grid">
+          <p class="skills-intro reveal delay-1">The technologies I use to build web systems, apps, and data solutions.</p>
+          <article class="skill-card reveal delay-2">
+            <p class="small-heading">Development</p><h3>Building Apps</h3>
+            <ul><li>HTML / CSS / JavaScript</li><li>Java</li><li>Kotlin</li><li>Android Studio</li></ul>
+          </article>
+          <article class="skill-card reveal delay-3">
+            <p class="small-heading">Data &amp; Hosting</p><h3>Data &amp; Deployment</h3>
+            <ul><li>Google Apps Script</li><li>Google Sheets &amp; Drive</li><li>MySQL</li><li>GitHub Pages</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- 04: Black transition slide -->
+    <section id="projects" class="panel projects-intro dark-panel" data-title="Projects">
+      <div class="container projects-intro-grid">
+        <div class="outline-number reveal" aria-hidden="true">01</div>
+        <div class="reveal delay-2">
+          <p class="eyebrow">A collection of my work</p>
+          <h2>notable<br><em>Projects</em></h2>
+          <p>Selected web systems I've built for our campus community.</p>
+          <a class="button button-orange" href="#panaghimamat">Explore projects ↓</a>
+        </div>
+      </div>
+    </section>
+    <!-- 05: Panaghimamat -->
+    <section id="panaghimamat" class="panel project-panel" data-title="Panaghimamat">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow orange reveal">01 / Event platform</p>
+          <h2 class="project-title reveal delay-1">Panaghimamat<br><em>2026</em></h2>
+          <div class="tags reveal delay-2"><span>Event System</span><span>RSVP</span><span>QR Check-in</span></div>
+          <p class="body-copy reveal delay-3">Live invitation and RSVP site for STI College Valencia SSC's Teachers' Day &amp; Acquaintance Party.</p>
+          <div class="bullet-lines reveal delay-3"><p>295 guests: 280 students + 15 faculty</p><p>QR check-in · Oct 23, 2026 · GitHub Pages</p></div>
+          <a class="button button-orange reveal delay-4" href="https://islawqt.github.io/panaghimamat-2026/" target="_blank" rel="noopener noreferrer">Visit live project ↗</a>
+        </div>
+        <div class="phones reveal delay-2">
+          <div class="phone"><img src="assets/pg-m-envelope.jpg" alt="Panaghimamat mobile screen: a sealed envelope that says a letter has arrived for you" width="647" height="1400" loading="lazy"></div>
+          <div class="phone"><img src="assets/pg-m-invitation.jpg" alt="Panaghimamat mobile screen: the opened invitation with date, venue and RSVP button" width="647" height="1400" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+    <!-- 06: Impact -->
+    <section id="impact" class="panel impact" data-title="Impact">
+      <div class="container">
+        <p class="eyebrow orange reveal">Panaghimamat 2026 · Impact</p>
+        <h2 class="reveal delay-1">295 guests.<br><em>One system.</em></h2>
+        <div class="impact-grid">
+          <article class="impact-card reveal delay-2"><p class="card-title">RSVPs per day · Oct 14–23</p><img class="chart" src="assets/pg-rsvps-per-day.png" alt="Bar chart of RSVPs per day from Oct 14 to 23: 66, 29, 21, 14, 21, 87, 35, 8, 9, 8. Peaks on launch day and last collection day." width="1600" height="900" loading="lazy"></article>
+          <article class="impact-card reveal delay-3"><p class="card-title">Reply to check-in</p><img class="chart" src="assets/pg-funnel.png" alt="Funnel: 298 replied, 295 attending, 295 paid, 280 checked in" width="1600" height="900" loading="lazy"><div class="stacked-stats"><div><strong>100%</strong><span>paid before the event</span></div><div><strong>~2 hrs</strong><span>to check in 280 guests at the door</span></div></div></article>
+        </div>
+      </div>
+    </section>
+    <!-- 07: Sportfest -->
+    <section id="sportfest" class="panel sportfest dark-panel" data-title="Sportfest">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow reveal">02 / Event platform</p>
+          <h2 class="project-title reveal delay-1">STI Valencia<br><em>Sportfest 2026</em></h2>
+          <div class="tags dark-tags reveal delay-2"><span>Event Platform</span><span>Digital Pass</span><span>Apps Script</span><span>QR</span></div>
+          <p class="body-copy reveal delay-3">Harry Potter house-themed system for the SSC — 332 passes expected (students + faculty).</p>
+          <div class="bullet-lines reveal delay-4">
+            <p>Event pass: access code + in-browser camera</p>
+            <p>QR attendance scanner + admin dashboard</p>
+            <p>Live scorer, scoreboard &amp; tournament bracket</p>
+            <p>MLBB team registration + stream overlays</p>
+          </div>
+        </div>
+        <div class="banners reveal delay-2">
+          <img src="assets/sf-banner-home.jpg" alt="Sportfest 2026 home banner: Get your digital Event Pass" width="1092" height="572" loading="lazy">
+          <img src="assets/sf-banner-admin.jpg" alt="Sportfest 2026 SSC Admin banner: schedule, scanners and passes" width="1092" height="572" loading="lazy">
+        </div>
+      </div>
+    </section>
+    <!-- 08: Workflow -->
+    <section id="sportfest-flow" class="panel sportflow" data-title="How it works">
+      <div class="container">
+        <p class="eyebrow orange reveal">Sportfest 2026 · How it works</p>
+        <h2 class="reveal delay-1">From sign-up<br><em>to scan.</em></h2>
+        <div class="flow-grid">
+          <figure class="flow-card reveal delay-1"><figcaption>My own pass · Phoenix Legion</figcaption><div class="id-frame"><img src="assets/sportfest-my-id.jpg" alt="Julius's own Sportfest 2026 event pass for Phoenix Legion, with the QR code blurred" width="700" height="1348" loading="lazy"></div></figure>
+          <figure class="flow-card reveal delay-2"><figcaption><b>1</b> Verify + snap photo</figcaption><img src="assets/sf-m-event-pass.jpg" alt="Event pass screen: claim your house ID and find your record" width="647" height="1400" loading="lazy"></figure>
+          <figure class="flow-card reveal delay-3"><figcaption><b>2</b> Scan once per day</figcaption><img src="assets/sf-m-scanner.jpg" alt="Attendance scanner unlock screen" width="647" height="1400" loading="lazy"></figure>
+          <figure class="flow-card reveal delay-4"><figcaption><b>3</b> Score games live</figcaption><img src="assets/sf-m-scorer.jpg" alt="Scorer login screen" width="647" height="1400" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+    <!-- 09: Capstone -->
+    <section id="capstone" class="panel capstone" data-title="Capstone">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow orange reveal">Capstone Project · Ongoing</p>
+          <h2 class="project-title reveal delay-1">Byaheng<br><em>Pabama</em></h2>
+          <h3 class="reveal delay-2">Bus Tracking &amp; Fare System for Pabama Corporation</h3>
+          <p class="reveal delay-2">A real client project for a provincial bus company in Bukidnon. Line inspectors report buses at checkpoints, so passengers see arrival estimates before leaving.</p>
+          <div class="bullet-lines reveal delay-3"><p>Project leader &amp; developer, 4-member team</p><p>Passenger tracking + arrival estimates, no login</p><p>Fare matrix on LTFRB rates, admin-editable</p><p>Admin dashboard, analytics &amp; bulletins</p><p>Laravel · MySQL · English / Filipino</p></div>
+        </div>
+        <div class="logo-panel reveal delay-2"><img src="assets/pabama-logo.jpg" alt="Pabama Corporation logo" width="1055" height="1014" loading="lazy"></div>
+      </div>
+    </section>
+    <!-- 10: Data privacy -->
+    <section id="privacy" class="panel privacy dark-panel" data-title="Data privacy">
+      <div class="container">
+        <p class="eyebrow orange reveal">How I approach responsible development</p>
+        <h2 class="reveal delay-1">Data Privacy<br>by <em>Design</em></h2>
+        <div class="privacy-grid">
+          <article class="privacy-card reveal delay-2"><h3>Panaghimamat</h3><p>Collects only what's needed</p><p>Data purged after the event</p><p>Never shared or reused</p></article>
+          <article class="privacy-card reveal delay-3"><h3>Sportfest</h3><p>Collects only what's needed</p><p>Auto-purge planned 29 days after the last event day</p><p>Photos stay in the SSC's official Drive</p></article>
+        </div>
+        <p class="privacy-line reveal delay-4">Collect <em>only what's needed.</em><br>Delete it when it's done.</p>
+      </div>
+    </section>
+    <!-- 11: Education -->
+    <section id="education" class="panel education" data-title="Education">
+      <div class="container two-col">
+        <div><p class="eyebrow orange reveal">What I've learned</p><h2 class="reveal delay-1">Education &amp;<br>Certification</h2>
+        <div class="edu-list">
+          <article class="edu-row reveal delay-1"><h3>BS Information Systems</h3><p>STI College Valencia</p><span>2023-current</span></article>
+          <article class="edu-row reveal delay-2"><h3>Senior High</h3><p>Quezon Institute of Technology</p><span>HUMSS, 2022</span></article>
+          <article class="edu-row reveal delay-3"><h3>Oracle Academy</h3><p>Java Fundamentals</p></article>
+        </div></div>
+        <img class="side-art reveal delay-2" src="assets/education-art.jpg" alt="Stack of books with a graduation cap and a ladder on an orange circle" width="1122" height="1206" loading="lazy">
+      </div>
+    </section>
+    <!-- 12: Contact -->
+    <section id="contact" class="panel contact" data-title="Connect">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow reveal">I'd love to hear from you</p>
+          <h2 class="reveal delay-1">Let's<br><em>Connect</em></h2>
+          <p class="body-copy reveal delay-2">I'm always open to new ideas, collaborations, and opportunities. Reach out anytime!</p>
+          <div class="contact-links reveal delay-3">
+            <a href="mailto:siapocjulius@gmail.com">✉ <span>siapocjulius@gmail.com</span> ↗</a>
+            <a href="tel:+639851996465">✆ <span>+63 985 199 6465</span> ↗</a>
+            <a href="https://github.com/Islawqt" target="_blank" rel="noopener noreferrer">⌘ <span>github.com/Islawqt</span> ↗</a>
+          </div>
+          <p class="copyright">© <span id="year">2026</span> Julius / Islaw · Crafted for the web</p>
+        </div>
+        <img class="side-art reveal delay-2" src="assets/contact-art.jpg" alt="Two people shaking hands on an orange circle" width="1247" height="1240" loading="lazy">
+      </div>
+    </section>
+  </main>
+</body>
+</html>
