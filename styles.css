@@ -311,3 +311,9 @@ h3{font-size:clamp(1.3rem,6vw,2.3rem)}
 @media (prefers-reduced-motion:reduce) {
   html { scroll-snap-type:none; }
 }
+
+
+/* Prevent duplicate charts on desktop: show the originals above mobile width. */
+@media (min-width:701px) {
+  .impact .chart-phone { display:none; }
+}
